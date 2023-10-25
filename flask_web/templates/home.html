@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Graph demo</h1>
+<p>Dataset has {{nrecords}} records</p>
+<hr>
+
+<!-- Graph placeholder -->
+<div class="charts text-center">
+  <h3>Energy generation by source by month</h3>
+  <div class="row"><div id="tot_gen"></div></div>
+  <!-- Placeholder for the tooltip -->
+  <div id="vis-tooltip" class="vg-tooltip"></div>
+</div>
+
+<!-- Render Charts -->
+<script type="text/javascript">
+  function parse(url, div) {
+      var opt = {
+      mode: "vega-lite",
+      renderer: "svg",
+      actions: {export: true, source: false, editor: false}
+      };
+
+      vegaEmbed("#"+div, url, opt, function(error, result) {
+      // result.view is the Vega View, url is the original Vega-Lite specification
+      vegaTooltip.vegaLite(result.view, url);
+      });
+  }
+  parse("/charts/gen","tot_gen");
+</script>
+{% endblock %}
