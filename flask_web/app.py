@@ -1,5 +1,5 @@
 import pandas as pd
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 import altair as alt
 
 app = Flask(__name__)
@@ -15,6 +15,10 @@ def home():
 @app.route('/gen')
 def gen():
     return render_template('gen.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 #### Graph routes
 @app.route('/charts/gen')
