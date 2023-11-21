@@ -16,6 +16,11 @@ def home():
 def gen():
     return render_template('gen.html')
 
+@app.route('/data')
+def data():
+    return render_template('data.html')
+
+
 @app.route('/resources')
 def resources():
     return render_template('resources.html')

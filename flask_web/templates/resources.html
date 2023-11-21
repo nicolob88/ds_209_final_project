@@ -1,28 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-<h1 style="margin-top: 20px;">Data</h1>
+<h2 style="margin-top: 20px;">Resources and links used throughout the site</h2>
 <br>
-<h3>U.S. Data generation 2011-2022</h3>
 <p>
-  The data used for this project has been extracted from <a href="https://www.kaggle.com/datasets/kevinmorgado/us-energy-generation-2001-2022">kaggle</a> from the <b>US Energy Generation 2001-2022</b> dataset. 
-  It contains the amount of energy generated (in Mega Watts) by state, month and source. There are several energy sources on the file which have been categorized as renewable or not based on the list below:
   <ul>
-    <li><b>Hydroelectric</b>: Renewable</li>
-    <li><b>Pumped storage</b>: Renewable</li>
-    <li><b>Solar</b>: Renewable</li>
-    <li><b>Biomass</b>: Renewable</li>
-    <li><b>Wood</b>: Renewable</li>
-    <li><b>Wind</b>: Renewable</li>
-    <li><b>Geothermal</b>: Renewable</li>
-    <li><b>Petroleum</b>: Non-renewable</li>
-    <li><b>Natural gas</b>: Non-renewable</li>
-    <li><b>Coal</b>: Non-renewable</li>
-    <li><b>Other gasses</b>: Non-renewable</li>
-    <li><b>Nuclear</b>: Non-renewable</li>
-    <li><b>Other</b>: Non-renewable</li>
+    <li><a href='https://www.eia.gov/consumption/residential/reports/2009/state_briefs/index.php' target='blank'>Residential Energy Consumption Survey (RECS) - EIA</a></li>
+    <li><a href='https://www.eia.gov/consumption/residential/data/2020/index.php?view=characteristics' target='blank'>Housing Characteristics tables - EIA</a></li>
+    <li><a href='https://www.eia.gov/environment' target='blank'>Environmental Impact - EIA</a></li>
+    <li><a href='https://www.eia.gov/todayinenergy/detail.php?id=60802' target='blank'>Today in Energy - EIA</a></li>
+    <li><a href='https://www.eia.gov/energyexplained' target='blank'>Energy Explained - EIA</a></li>
   </ul>
 </p>
-<p>The dataset has over 400 thousand records, but some of them belong to 2022, which we won't be including in our analysis given that the data for that year is not complete.</p>
 
 <script>
   // add active class

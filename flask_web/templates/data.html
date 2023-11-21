@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 style="margin-top: 20px;">U.S. Data generation 2011-2022</h2>
+<p>
+  <b>US Energy Generation 2001-2022</b> dataset extracted from <a href="https://www.kaggle.com/datasets/kevinmorgado/us-energy-generation-2001-2022" target='blank'>Kaggle</a>. 
+  It contains the amount of energy generated (in Mega Watts) by state, month and source. There are several energy sources on the file which have been categorized as renewable or not based on the list below:
+  <ul>
+    <li><b>Hydroelectric</b>: Renewable</li>
+    <li><b>Pumped storage</b>: Renewable</li>
+    <li><b>Solar</b>: Renewable</li>
+    <li><b>Biomass</b>: Renewable</li>
+    <li><b>Wood</b>: Renewable</li>
+    <li><b>Wind</b>: Renewable</li>
+    <li><b>Geothermal</b>: Renewable</li>
+    <li><b>Petroleum</b>: Non-renewable</li>
+    <li><b>Natural gas</b>: Non-renewable</li>
+    <li><b>Coal</b>: Non-renewable</li>
+    <li><b>Other gasses</b>: Non-renewable</li>
+    <li><b>Nuclear</b>: Non-renewable</li>
+    <li><b>Other</b>: Non-renewable</li>
+  </ul>
+</p>
+<p>The dataset has over 400 thousand records, but some of them belong to 2022, which we won't be including in our analysis given that the data for that year is not complete.</p>
+<p>This data set is used to identify energy source generation trends and patterns for US states over different months in each year.</p>
+<hr>
+<br>
+<h2>U.S. Data Consumption and Cost</h2>
+<p>Dataset from the <a href='https://www.eia.gov' target='blank'>Energy Information Administration</a> (<b>EIA</b>) with energy generation, consumption by sources, in billion BTU (BBTu) and expenditure and price per million BTU. All this at a state and year level from 2001 to 2022. Renewable sources are combined into 1 bucket.</p>
+<p>This data set is used for in-depth analysis of energy consumption impacts on state fiscal budgets and energy preservation recommendations.</p>
+<script>
+  // add active class
+  $("#navbarContent .navbar-nav .data").addClass("active");
+</script>
+{% endblock %}

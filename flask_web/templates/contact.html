@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-<h1 style="margin-top: 20px;">The team behind the project</h1>
+<h2 style="margin-top: 20px;">The team behind the project</h2>
 
-<div class="card mb-3" style="max-width: 540px; margin-top: 30px;">
+<div class="card mb-3" style="max-width: 540px; max-height: 300px; margin-top: 30px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="" class="img-fluid rounded-start">
+      <img src="{{ url_for('static', filename='kt_pic.PNG') }}" class="img-fluid rounded-start">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -16,10 +16,10 @@
   </div>
 </div>
 
-<div class="card mb-3" style="max-width: 540px; margin-top: 30px;">
+<div class="card mb-3" style="max-width: 540px; max-height: 300px; margin-top: 30px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="" class="img-fluid rounded-start">
+      <img src="{{ url_for('static', filename='megan_pic.PNG') }}" class="img-fluid rounded-start">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -30,10 +30,10 @@
   </div>
 </div>
 
-<div class="card mb-3" style="max-width: 540px; margin-top: 30px;">
+<div class="card mb-3" style="max-width: 540px; max-height: 300px; margin-top: 30px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="" class="img-fluid rounded-start">
+      <img src="{{ url_for('static', filename='jammy_pic.PNG') }}" class="img-fluid rounded-start">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -44,10 +44,10 @@
   </div>
 </div>
 
-<div class="card mb-3" style="max-width: 540px; margin-top: 30px;">
+<div class="card mb-3" style="max-width: 540px; max-height: 300px; margin-top: 30px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="static/nico_pic.jpg" class="img-fluid rounded-start">
+      <img src="{{ url_for('static', filename='nico_pic.PNG') }}" class="img-fluid rounded-start">
     </div>
     <div class="col-md-8">
       <div class="card-body">
