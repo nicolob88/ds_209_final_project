@@ -3,18 +3,14 @@ from energy_charts import energyCharts
 
 ec = energyCharts()
 app = Flask(__name__)
+import pandas as pd
 @app.route("/")
-def w209():
-   file="about9.jpg"
-   return render_template("w209.html",file=file)
+def ping():
+   return "<h2>I am still alive</h2>"
 
-@app.route("/test/")
-def test():
-   return "<h1>This is another test</h1>"
-
-@app.route("/cost_expediture")
-def cost_expediture():
-    mychart = ec.createCostExpeditureChart()
+@app.route("/cost_expenditure")
+def cost_expenditure():
+    mychart = ec.createCostExpenditureChart()
     chart_json = mychart.to_json()
     return render_template('chart_template.html', chart_json=chart_json)
 
@@ -25,5 +21,5 @@ def generation_consumption():
     return render_template('chart_template.html', chart_json=chart_json)
 
 if __name__ == "__main__":
-   app.run(host="0.0.0.0", debug=True, port=8888)
+   app.run()
 
