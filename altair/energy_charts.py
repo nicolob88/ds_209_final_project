@@ -6,11 +6,11 @@ import os
 class energyCharts:
     def __init__(self):
         print(os.listdir())
-        self.df_e = pd.read_csv("energy_data.csv")
+        self.df_e = pd.read_csv("w209/energy_data.csv")
         self.df_e_us = self.df_e.query("state == 'US'") 
         self.df_e_st = self.df_e.query("state != 'US'") 
 
-    def createCostExpeditureChart(self):
+    def createCostExpenditureChart(self):
         df_cost_exp = self.df_e_st[['state', 'year', 'expenditures (M dollars)', 'price (dollars per MBtu)']]
         df_cost_exp = df_cost_exp.melt(id_vars=['state', 'year'], var_name='energy_view', value_name='energy_value')
         energy_type = ['expenditures (M dollars)', 'price (dollars per MBtu)']
@@ -41,20 +41,20 @@ class energyCharts:
         ).properties(
         width=800,
         height=100,
-        title="US Energy Cost/Expediture (2001-2021)"
+        title="US Energy Cost/Expenditure (2001-2021)"
         )
 
         state_level = alt.Chart(df_cost_exp).mark_bar(
         ).encode(
         color=alt.Color('energy_value:Q', scale=alt.Scale(scheme="blues")), 
         x=alt.X('state:N', title='State'), 
-        y=alt.Y('energy_value:Q', title='Energy Cost/Expediture'), 
+        y=alt.Y('energy_value:Q', title='Energy Cost/Expenditure'), 
         tooltip=['year:N', 'state:N', 'energy_value:Q']).add_params( 
         selector, brush
         ).transform_filter( 
         selector).transform_filter(
         brush).properties(
-        title='States Energy Cost/Expediture', width=800, height=300
+        title='States Energy Cost/Expenditure', width=800, height=300
         )
         mychart = alt.vconcat(us_level, state_level)
         return mychart
@@ -62,7 +62,7 @@ class energyCharts:
     def createEnergySourceCharts(self, df, brush, etype, color):
         gen = alt.Chart(df).mark_line(point=True).encode(
         x=alt.X('year:N', axis=alt.Axis(labels=False), title=None),
-        y=alt.Y(f'{etype}_generation:Q', title=f'{etype}.capitalize() Energy (BBTu)'),
+        y=alt.Y(f'{etype}_generation:Q', title=f'{etype} Energy (BBTu)'),
         color=alt.value(color),
         tooltip=['year:N', f'{etype}_generation:Q'],
         shape=alt.value('square'),
@@ -73,7 +73,7 @@ class energyCharts:
         )
         con = alt.Chart(df).mark_line(point=True).encode(
         x=alt.X('year:N', axis=alt.Axis(labels=False), title=None),
-        y=alt.Y(f'{etype}_consumption:Q', title=f'{etype}.capitalize() Energy (BBTu)'),
+        y=alt.Y(f'{etype}_consumption:Q', title=f'{etype} Energy (BBTu)'),
         strokeDash=alt.value([8,4]),
         color=alt.value(color),
         tooltip=['year:N', f'{etype}_consumption:Q'],
@@ -102,8 +102,8 @@ class energyCharts:
         ).add_params(
         brush
         ).encode(
-        x=alt.X('year:N', title='Year'),
-        y=alt.Y('diff:Q', title='diff'),
+        x=alt.X('year:N'),
+        y=alt.Y('diff:Q', title='Net Energy (BBtu)'),
         tooltip=['year:N', 'diff:Q'],
         color=alt.condition('datum.diff < 0', alt.value('#ff9999'), alt.value('#1f77b4')),
         opacity=alt.condition(brush, alt.value(0.75), alt.value(0.25))
