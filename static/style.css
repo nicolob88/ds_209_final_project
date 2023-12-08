@@ -17,7 +17,7 @@ body{
 }
 /*DON'T ADD ANYTHING ELSE TO INNER */
 .inner{
-	width:1040px;
+	width:100%;
 }
 /*DON'T ADD ANYTHING ELSE TO INNER */
 .lower{
@@ -204,7 +204,7 @@ a:hover{
 .boxes{
 	display:flex;
 	flex-direction:row;
-	margin: 100px auto 0px 200px;
+	margin: 100px 100px 0px 100px;
 }
 
 .box1{
@@ -447,8 +447,7 @@ a:hover{
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .tableauPlaceholder{
-	left: 125px;
-
+	left: 105px;
 }
 
 /*------------------------------END TO NON HOME PAGE SECTION TWO ------------------*/
