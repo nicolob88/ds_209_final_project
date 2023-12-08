@@ -1,5 +1,7 @@
 from flask import Flask, render_template, url_for
+from energy_charts import energyCharts
 
+ec = energyCharts()
 app = Flask(__name__, static_folder='static')
 import pandas as pd
 
@@ -11,7 +13,7 @@ def home():
 
 @app.route('/energyoverview.html')
 def energyoverview():
-    return render_template('energyoverview.html', css=url_for('static', filename='style.css'))
+    return render_template('energyoverview.html')
 
 @app.route('/energyprojections.html')
 def energyprojections():
@@ -29,5 +31,22 @@ def datasources():
 def contact():
     return render_template('contact.html', css=url_for('static', filename='style.css'))
 
+@app.route("/cost_expenditure")
+def cost_expenditure():
+    mychart = ec.createCostExpenditureChart()
+    chart_json = mychart.to_json()
+    return render_template('chart_template.html', chart_json=chart_json)
+
+@app.route("/generation_consumption")
+def generation_consumption():
+    mychart = ec.createGenerationConsumptionChart()
+    chart_json = mychart.to_json()
+    return render_template('chart_template.html', chart_json=chart_json)
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
+
+
+
+
+
