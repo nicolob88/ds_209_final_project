@@ -142,8 +142,8 @@ class energyCharts:
 
         text_gen = alt.Chart(df_us).mark_text(
         fontSize=15,
-        dx=15,
-        dy=0
+        dx=50,
+        dy=-10
         ).encode(
         x="min(year):N",
         y=alt.Y("total_generation:Q", aggregate={'argmin': 'year'}),
@@ -153,8 +153,8 @@ class energyCharts:
 
         text_con = alt.Chart(df_us).mark_text(
         fontSize=15,
-        dx=15,
-        dy=0
+        dx=50,
+        dy=-10
         ).encode(
         x="min(year):N",
         y=alt.Y("total_consumption:Q", aggregate={'argmin': 'year'}),
