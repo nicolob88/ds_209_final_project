@@ -9,7 +9,7 @@ import pandas as pd
 @app.route('/')
 @app.route('/index.html')
 def home():
-    return render_template('index.html', css=url_for('static', filename='style.css'))
+    return render_template('index.html')
 
 @app.route('/energyoverview.html')
 def energyoverview():
@@ -17,19 +17,19 @@ def energyoverview():
 
 @app.route('/energyprojections.html')
 def energyprojections():
-    return render_template('energyprojections.html', css=url_for('static', filename='style.css'))
+    return render_template('energyprojections.html')
 
 @app.route('/cleanenergy.html')
 def cleanenergy():
-    return render_template('cleanenergy.html', css=url_for('static', filename='style.css'))
+    return render_template('cleanenergy.html')
 
 @app.route('/datasources.html')
 def datasources():
-    return render_template('datasources.html', css=url_for('static', filename='style.css'))
+    return render_template('datasources.html')
 
 @app.route('/contact.html')
 def contact():
-    return render_template('contact.html', css=url_for('static', filename='style.css'))
+    return render_template('contact.html')
 
 @app.route("/cost_expenditure")
 def cost_expenditure():
