@@ -87,8 +87,8 @@ class energyCharts:
         )
         combined = gen + con
         combined.encode(opacity=alt.condition(brush, alt.value(0.75), alt.value(0.05)))
-	if title:
-	   combined = combined.properties(title="Source Breakdown")
+        if title:
+           combined = combined.properties(title="Source Breakdown")
         return combined
 
     def createGenerationConsumptionChart(self):
