@@ -17,7 +17,7 @@ body{
 }
 /*DON'T ADD ANYTHING ELSE TO INNER */
 .inner{
-	width:100%;
+	width:1040px;
 }
 /*DON'T ADD ANYTHING ELSE TO INNER */
 .lower{
@@ -204,7 +204,7 @@ a:hover{
 .boxes{
 	display:flex;
 	flex-direction:row;
-	margin: 100px 100px 0px 100px;
+	margin: 100px auto 0px 25px;
 }
 
 .box1{
@@ -306,7 +306,7 @@ a:hover{
 	border-radius: 25px;
   	border: 2px solid #ffffff;
   	padding:20px; 
-  	margin:30px;
+  	margin:15px;
   	width: 100px;
   	height: 10px; 
   	text-align:center;
@@ -447,7 +447,7 @@ a:hover{
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .tableauPlaceholder{
-	left: 105px;
+	left: 135px;
 }
 
 /*------------------------------END TO NON HOME PAGE SECTION TWO ------------------*/
@@ -456,12 +456,15 @@ a:hover{
 .three1{
 	height:2000px;
 }
-
+.altair{
+	margin:200px auto;
+	width:1263px;
+}
 
 /*------------------------------END TO NON HOME PAGE SECTION THREE ------------------*/
 /*------------------------------START TO NON HOME PAGE SECTION FOUR ------------------*/
 .four1{
-	height:1250px;
+	height:2000px;
 }
 
 
