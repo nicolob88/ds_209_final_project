@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>EnergyVista: Navigating Tomorrow's Energy Landscape</title>
-		<link rel="stylesheet" type="text/css" href="../static/style.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:500,900" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Text+Me+One|Ubuntu" rel="stylesheet">
@@ -48,7 +48,7 @@
 			<section class="one"><!-- start to section one -->
 				<div class="inner">
 					<div class="first">
-						<img class="homeimage" src="../static/homeimage.png"/>
+						<img class="homeimage" src="{{ url_for('static', filename='homeimage.png') }}"/>
 						<div class="mains">
 							<div class="discover">Navigating Tomorrow's Energy Landscape </div> 
 							<div class="explore">Explore</div>
@@ -75,7 +75,7 @@
 			<section class="five"> <!-- start to section five -->
 				<div class="inner">
 					<div class="fifth">
-						<img class="aboutus" src="../static/aboutus.png"/>
+						<img class="aboutus" src="{{ url_for('static', filename='aboutus.png') }}"/>
 						<div class="rightbox">
 							<div class="top">About Us</div> 
 							<div class="line"> - </div>

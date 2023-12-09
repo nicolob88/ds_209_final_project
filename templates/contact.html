@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>EnergyVista: Navigating Tomorrow's Energy Landscape</title>
-		<link rel="stylesheet" type="text/css" href="../static/style.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:500,900" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Text+Me+One|Ubuntu" rel="stylesheet">
@@ -55,23 +55,23 @@
 					Your support, whether through active participation or sharing substantiated information, plays a crucial role in bolstering our cause. Together, we can amplify our impact, fortify our claims with robust data, and work towards creating a positive and lasting change. Thank you for considering joining us on this meaningful journey.:
 					<div class="boxes">
 						<div class="box1">
-							<img class="nico" src="../static/nico_pic.png"/>
+							<img class="nico" src="{{ url_for('static', filename='nico_pic.PNG') }}"/>
 							<div class="title">Nico Loffreda</div>
 							<div class="description">nicolof88@berkeley.edu
 							</div>
 						</div>
 						<div class="box2">
-							<img class="jammy" src="../static/jammy_pic.png"/>
+							<img class="jammy" src="{{ url_for('static', filename='jammy_pic.png') }}"/>
 							<div class="title">Jammy Chan</div>
-							<div class="description"> jammyc@berkeley.edu </div>
+							<div class="description">masterdrm@berkeley.edu </div>
 						</div>
 						<div class="box3">
-							<img class="kt" src="../static/kt_pic.png"/> 
+							<img class="kt" src="{{ url_for('static', filename='kt_pic.png') }}"/> 
 							<div class="title">KT Norton</div>
 							<div class="description">ktnorton@berkeley.edu</div>
 						</div>
 						<div class="box4">
-							<img class="megan" src="../static/megan_pic.png"/>
+							<img class="megan" src="{{ url_for('static', filename='megan_pic.png') }}"/>
 							<div class="title">Megan Nguyen</div>
 							<div class="description">meganguyen@berkeley.edu </div>
 						</div>
