@@ -156,6 +156,7 @@ a:hover{
 	color: #000000;
 	margin: 50px auto auto 20px;
 }
+
 /*-------------------------END ONE SECTION----------------------------- */
 
 /*---------------------------TWO SECTION--------------------------------*/
@@ -280,7 +281,7 @@ a:hover{
 	position:absolute;
 	background-color:rgba(211,211,211,0.7);
 	width:600px;
-	height:400px;
+	height:450px;
 	top:80px;
 	right:0px;
 	left:600px;
@@ -300,13 +301,13 @@ a:hover{
 	font-size: 14px;
 	line-height:1.5;
 	font-family: 'Roboto', sans-serif;
-	padding:10px;
+	padding:5px;
 }
 .learnmore{
 	border-radius: 25px;
   	border: 2px solid #ffffff;
   	padding:20px; 
-  	margin:15px;
+  	margin:30px;
   	width: 100px;
   	height: 10px; 
   	text-align:center;
@@ -428,12 +429,16 @@ a:hover{
 /*------------------------------START TO NON HOME PAGE SECTION TWO ------------------*/
 
 .two1{
-	height:1600px;
+	min-height:8000px;
+}
+.sectionUS{
+	min-height:8000px;
 }
 .two2{
-	height:2000px;
+	height:8000px;
 }
 .two3{
+	margin:300px auto;
 	height:2500px;
 }
 .paragraphs{
@@ -446,19 +451,12 @@ a:hover{
 	line-height:1.5;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-.tableauPlaceholder{
-	left: 135px;
-}
 
 /*------------------------------END TO NON HOME PAGE SECTION TWO ------------------*/
 /*------------------------------START TO NON HOME PAGE SECTION THREE ------------------*/
 
 .three1{
-	height:2000px;
-}
-.altair{
-	margin:200px auto;
-	width:1263px;
+	height:300px;
 }
 
 /*------------------------------END TO NON HOME PAGE SECTION THREE ------------------*/
