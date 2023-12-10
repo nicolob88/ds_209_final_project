@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<title>EnergyVista: Navigating Tomorrow's Energy Landscape</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:500,900" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Text+Me+One|Ubuntu" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<div class="inner">
+				<div class="navbar">
+					<div id="container" class="nav">
+						<div class="dropdown">
+						<a class="navbutton" href="index.html">Home</a>
+						</div>
+						<div class="dropdown">
+							<a class="navbutton" href="energyoverview.html">Energy Overview</a>
+							<div class="dropdown-content">
+						      <a href="energyoverview.html#general_trends">Energy Generation Trends</a>
+						      <a href="energyoverview.html#consumption">Energy Consumption/Generation Comparison</a>
+						      <a href="energyoverview.html#expenditure">Energy Expenditure/Cost</a>
+						    </div>
+						</div>
+						<div class="dropdown">
+						<a class="navbutton" href="energyprojections.html">Energy Projections</a>
+						</div>
+						<div class="dropdown">
+						<a class="navbutton" href="cleanenergy.html">Clean Energy & Emissions</a>
+							<div class="dropdown-content">
+						      <a href="cleanenergy.html#US">CO2 in the US</a>
+						      <a href="cleanenergy.html#World">CO2 in the World</a>
+						    </div>
+						</div>
+						<div class="dropdown">
+						<a class="navbutton" href="datasources.html">Data Sources</a>
+						</div>
+						<div class="dropdown">
+						<a class="navbutton" href="contact.html">Contact</a>
+						<div class="search"><input type="text" placeholder="Search.."></div>
+					</div>
+				</div>
+		</nav>	
+		<div class="lower">
+			<section class="one1"><!-- start to section one -->
+				<div class="inner">	<!-- start to inner #1 -->
+					<div class="first1">
+						<img class="sky" src="{{ url_for('static', filename='sky.png') }}"/>
+							<div class="mains1">
+								<div class="paragraphs">Clean Energy & Emissions</div>
+							</div>
+					</div>
+				</div> <!-- end inner #1 -->
+			</section><!-- end to section one -->
+			<section class="two2" id="US"><!--start to section two -->
+				<div class="inner"> <!-- start to inner #2 -->
+					<div class="sectiontitle">CO2 Emissions in the US</div>
+					<div class="mission1">
+						Carbon emissions, primarily in the form of carbon dioxide (CO2), result from human activities, particularly the burning of fossil fuels. The consequences of releasing carbon into the atmosphere are significant and wide-ranging, impacting both the environment and human health. Scientific consensus, supported by organizations like the <a href="https://www.ipcc.ch/">Intergovernmental Panel on Climate Change (IPCC)</a> and the <a href="https://www.who.int/news/item/17-10-2023-health-leaders-at-the-whs-support-who-commitment-to-build-climate-resilient-low-carbon-sustainable-health-systems">World Health Organization (WHO)</a>, underscores the severity of these consequences.
+						<br><br>
+						The main threat posed by carbon emissions is their role as a major driver of climate change. Excess CO2 contributes to the greenhouse effect, trapping heat in the Earth's atmosphere. This leads to a warmer planet, causing rising sea levels, extreme weather events, disruptions to ecosystems, and changes in agricultural patterns. These consequences are not distant predictions but observable realities worldwide.
+						<br><br>
+						Beyond the environmental impact, the increase in carbon emissions negatively affects human health. Burning fossil fuels releases not only CO2 but also various pollutants, such as particulate matter and nitrogen oxides. These pollutants, known for their harmful effects on respiratory and cardiovascular health, pose a direct threat to human well-being, especially affecting vulnerable populations like children and the elderly.
+						<br><br>
+						Scientific research warns of critical tipping points, beyond which the effects of climate change become irreversible. Melting ice caps, thawing permafrost, and disruptions to major ocean currents are potential triggers for cascading and uncontrollable environmental changes. Once these thresholds are crossed, the consequences become increasingly challenging to mitigate.
+						<br><br>
+						In addressing the concerning trajectory of carbon emissions, insights from our dashboard provide a tangible understanding. Upon a deeper look into the US, we see that CO2 emissions have gone down at a slow rate when compared to the energy generation increase, with a 15% decrease between 2001 and 2021. Within the US, TX is the State with the highest CO2 emissions throughout the entire period. This is unsurprising perhaps given that it is the State that generates the most energy, with 90% of that energy coming from Oil and Gas. The map below will help to show the difference in emissions across the different States. The emissions don’t show a lot of changes throughout the period.
+
+					</div>
+					<div class='tableauPlaceholder' id='viz1702023550623' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DS&#47;DS209finalproject-UStotalCO2&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DS209finalproject-UStotalCO2&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DS&#47;DS209finalproject-UStotalCO2&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1702023550623');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>	
+
+
+					<div class="mission1">
+						Examining the timeline from 2001 to 2021 reveals the fluctuating trajectory of total carbon dioxide emissions, peaking in 2007. This temporal perspective emphasizes the dynamic nature of carbon emissions and emphasizes the need for concerted efforts to mitigate their impact. In order to accomplish that, we unveil a comprehensive exploration into the origins of carbon dioxide emissions. The dashboard delves deeply into various sources, unraveling the critical need to understand the root causes of this environmental concern.
+					</div>
+					<div class='tableauPlaceholder' id='viz1702142165183' style='position: relative'><noscript><a href='#'><img alt='Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectDashboard209&#47;Dashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FinalProjectDashboard209&#47;Dashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectDashboard209&#47;Dashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1702142165183');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+					<div class="mission1">
+						Moreover, our dashboard doesn't merely reveal overarching trends; it enables a detailed exploration of emissions at the state level. Using the dropdown menu, specific states can be pinpointed to uncover the complex sources of emissions within each. This feature is particularly powerful in identifying the dominant source of emissions, offering a tailored approach to addressing environmental concerns on a regional scale.
+						<br><br>
+						Additionally, the pie chart visually represents the percentage of total emissions attributed to each state. This not only helps gauge relative contributions but also serves as a guide for strategic interventions to reduce emissions. It provides a roadmap for targeted, impactful policies that address the unique challenges posed by each state.
+						<br><br>
+						Transitioning to clean energy is imperative, not just as a response to a looming crisis but as a collective acknowledgment of our responsibility to shape a sustainable, equitable, and prosperous future. Despite observing a decline in carbon emissions in recent years, there is still a considerable journey ahead.
+					</div>
+					</div><!-- end to inner #2 -->
+			</section><!-- end to section #2 -->
+			<section class="two3" id="World"><!--start to section two -->
+				<div class="inner"> <!-- start to inner #2 -->
+					<div class="sectiontitle">CO2 Emissions in the World</div>
+					<div class=mission1>The Paris agreement aims to limit the increase of the average global temperature to no more than 1.5C before the end of this century. For this, scientists agree that CO2 emissions need to be reduced 45% by 2030, and reach zero net emissions by 2050 (<a href="https://www.un.org/en/climatechange/net-zero-coalition">source</a>). Using data from the <a href="https://data.worldbank.org/indicator/EN.ATM.CO2E.KT">world bank</a> and <a href="https://www.eia.gov/environment/emissions/state/">EIA</a>, we can identify that although emissions started declining in 2018, there is still a long way to go to reach these goals; in fact, the general consensus is that the world is not aligned to reach the stipulated goals. When comparing different countries, we see that the US was the country with the highest CO2 emissions by the beginning of the 2000’s, but it was surpassed by China in 2005, a trend that continues today. In 2021, the latest reported data, the US was responsible for 13% of the total world emissions. The dashboard below contains an area chart with the contribution of the 8 countries that contribute the most CO2 emissions, and the rest of the world in Kilo Tons (kt) over the years. This graph will help to visualize the trend of the emissions each country had since 2001, you can choose to see the share (normalized to 1) or the total contribution (in CO2 kt) by using the Metric filter. The bar chart aims to help to compare the emissions between the different countries for a given year. You can control which year to see with the filter.</div>
+					<div class='tableauPlaceholder' id='viz1702023507690' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DS&#47;DS209finalproject-WorldCO2&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DS209finalproject-WorldCO2&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DS&#47;DS209finalproject-WorldCO2&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1702023507690');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+				</div><!-- end to inner #2 -->
+			</section><!-- end to section #2 -->
+			<section class="five1"><!--start to section five -->
+				<div class="inner"> <!-- start to inner #5 -->
+					<div class="section6">
+						<div class="socialmedia">
+							<div class="facebook"><span style="font-size: 3rem;"><i class="fab fa-facebook-f"></span></i><div>Facebook</div></div>
+							<div class="twitter"><span style="font-size: 3rem;"><i class="fab fa-twitter"></span></i><div>Twitter</div></div>
+							<div class="instagram"><span style="font-size: 3rem;"><i class="fab fa-instagram"></span></i>
+							Instagram</div>
+							<div class="youtube"><span style="font-size: 3rem;"><i class="fab fa-youtube"></span></i>Youtube</div>
+							<div class="googleplus"><span style="font-size: 3rem;"><i class="fab fa-google-plus-g"></span></i>Google+</div>
+						</div>
+						<div class="information">
+							<div class="cause">Join the Cause</div>
+							<div class="accessibility">Accessibility</div>
+							<div class="careers">Careers</div>
+							<div class="newsroom">Newsroom</div>
+							<div class=contactus>Contact Us</div>
+							<div class="termsofuse">Terms of Use</div>
+							<div class="privacypolicy">Privacy Policy</div>
+						</div>
+						<div class="moreinfo">
+							<div class="cc">©EnergyVista</div>
+							<div class="address">Final Project 209 Team University of California at Berkeley</div>
+						</div>
+					</div>
+				</div><!-- end to inner #5 -->
+			</section><!-- end to section #5 -->
+		</div>
+	</body>
+</html>
