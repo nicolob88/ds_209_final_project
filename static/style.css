@@ -196,7 +196,7 @@ a:hover{
 	padding: 30px auto auto auto;
 }
 .features{
-	margin:50px auto 40px auto;
+	margin:50px auto 40px 10px;
 	font-size:40px;
 	font-family: 'Roboto', sans-serif;
 	width:1263px;
@@ -205,7 +205,7 @@ a:hover{
 .boxes{
 	display:flex;
 	flex-direction:row;
-	margin: 100px auto 0px 25px;
+	left:10px;
 }
 
 .box1{
